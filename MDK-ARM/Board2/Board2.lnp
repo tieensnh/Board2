@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"board2\startup_stm32f429xx.o"
+"board2\main.o"
+"board2\stm32f4xx_it.o"
+"board2\stm32f4xx_hal_msp.o"
+"board2\stm32f4xx_hal_i2c.o"
+"board2\stm32f4xx_hal_i2c_ex.o"
+"board2\stm32f4xx_hal_rcc.o"
+"board2\stm32f4xx_hal_rcc_ex.o"
+"board2\stm32f4xx_hal_flash.o"
+"board2\stm32f4xx_hal_flash_ex.o"
+"board2\stm32f4xx_hal_flash_ramfunc.o"
+"board2\stm32f4xx_hal_gpio.o"
+"board2\stm32f4xx_hal_dma_ex.o"
+"board2\stm32f4xx_hal_dma.o"
+"board2\stm32f4xx_hal_pwr.o"
+"board2\stm32f4xx_hal_pwr_ex.o"
+"board2\stm32f4xx_hal_cortex.o"
+"board2\stm32f4xx_hal.o"
+"board2\stm32f4xx_hal_exti.o"
+"board2\stm32f4xx_hal_spi.o"
+"board2\stm32f4xx_hal_tim.o"
+"board2\stm32f4xx_hal_tim_ex.o"
+"board2\system_stm32f4xx.o"
+--strict --scatter "Board2\Board2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Board2.map" -o Board2\Board2.axf
